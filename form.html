@@ -1,94 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAMPLE FORM</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <title>MyRegistration Form</title>
 </head>
-<h3>ADMISSION FORM</h3>
 <body>
-    <table>
-    <form action="form.html" >
-    <tr>
-        <tr>
-            <td>SESSION</td><td><input type="text" id="sem"></td>
-            </tr>
-           
-    <td>TYPE OF ADMISSION</td><td><select name="TYPE OF ATTENDANCE">
-        <option value="N">COUNCELLING</option>
-        <option value="P">DIRECT</option>
-        <option value="E">MANAGEMENT QUOTA</option>
-    </td>
-    </select> 
-    <tr>
-    <td>COURSE</td><td><select name="COURSE" id="">
-        <option value="mca">MCA</option>
-        <option value="mba">MBA</option>
-        <option value="btech">BTECH</option>
-    </td>
-    </select>
-    </tr>
-    <tr>
-    <td>NAME</td><td><input type="text" id="sem"></td>
-    </tr>
-    <tr>
-        <td>DATE OF BIRTH</td> <td><input type="date"></td>
-        </tr>
-    <tr>
-    <td>FATHER NAME</td><td><input type="text" id="sem"></td>
-    </tr>
-    <tr>
-    <td>MOTHER NAME</td><td><input type="text" id="sec"></td> 
-    </tr>
-    <tr>
-    <td>RELIGION</td><td><input type="text" id="sec"></td> 
-    </tr>
-    <tr>
-        <td>MINORITY</td><td><select name="COURSE" id="">
-            <option value="YES">YES</option>
-            <option value="NO">NO</option>
-    <tr>
-    <td>CATEGORY</td><td><input type="text" id="sec"></td> 
-    </tr>
-    <tr>
-    <td>ADDRESS</td><td><input type="text"></td>
-    </tr>
-    <tr>
-    <td>PHONE NO.</td><td><input type="text"></td>
-    </tr>
-    <tr>
-    <td>PERMANENT ADDRESS</td><td><input type="text"></td>
-    </tr>
-    <tr>
-    <td>PHONE NO.</td><td><input type="text"></td>
-    </tr>
-    <tr>
-    <td>HIGH SCHOOL ROLL NO.</td> <td><input type="text"></td>
-    </tr>
-    <tr>
-    <tr>
-    <td>PASSING YEAR</td> <td><input type="text"></td>
-    </tr>
-    <td>OBTAINED MARKS</td> <td><input type="text"></td>
-    </tr>
-    <tr>
-    <td>SHCOOL NAME</td> <td><input type="text"></td>
-    </tr>
-    <tr>
-    <td> CUET RANK</td> <td><input type="text"></td>
-    </tr>
-    <tr>
-    <td>CUET TOTAL MARK</td><td><input type="text"></td>
-    </tr>
-    <tr>
-    <td></td><td><input type="text"></td>
-    </tr>
-    <tr>
-        <td><input type="submit"></td>
-    </tr>
+  <div class="myform">
+    <h2>Registration Form</h2>  
+    <form id="regis">
+      <abbr title="First Name">
+        <label for="fname">First Name
+        </abbr>
+      </label> <br>
+      <input type="text" name="fname" id="fname" placeholder="Enter your first name"> <br>
+      <label for="lname">Last Name</label> <br>
+      <input type="text" name="lname" id="lname" placeholder="Enter your last name">  <br>
+      <label for="dob">Date of Birth</label> <br>
+      <input type="date" name="dob" id="dob"> <br>
+      <label for="mail">Email Id</label> <br>
+      <input type="email" name="mail" id="mail" placeholder="Enter Email Id" required> <br>
+      <label for="Phone Number">Phone Number</label> <br>
+      <input type="number" name="phone" id="phone" placeholder="Enter Phone Number" required> (In 10 Digits) <br>
+      <label for="gender">Gender : </label>
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="Male"> Female <br>
+      <label for="addr">Address</label> <br>
+      <textarea name="" id="addr" cols="40" rows="5" placeholder="Enter Address"></textarea> <br>
+      <label for="pl">Programming Languages Known</label> <br>
+      <input type="checkbox" name="" id="Java">Java 
+      <input type="checkbox" name="" id="c++">C++ 
+      <input type="checkbox" name="" id="c">C 
+      <input type="checkbox" name="" id="py">Python <br> <br>
+      <label for="courses" style="color:black;">Course : </label>
+      <select  id="courses">
+        <option value="Courses" disabled selected>-------Courses-------</option>
+        <option value="Java">Java</option>
+        <option value="C++">C++</option>
+        <option value="python">Python</option>
+        <option value="sql">SQL</option>
+        <option value="AI">AI</option>
+        <option value="App dev">App Development</option>
+      </select>
+      <br> 
+    <input type="submit" value="SUBMIT">
+      
     </form>
-</table>
+  </div>
 </body>
 </html>
